@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Gastos</title>
+    </head>
+    <body onload="mostrarAutos();">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="../img/goku blue.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Cuentas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <!-- <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Menu</a>
+                    </div> -->
+                </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center m-auto">
+      <h1 class="bg-info text-white mt-3 p-2">Gastos Semana</h1>
+      <div class="card bg-dark text-warning " id="listAutos">
+        <p>Aqui van los Gastos</p>
+      </div><br />
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addModalAuto">Agregar</button>
+       
+       <div class="modal fade" id="addModalAuto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Gasto del dia</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"> 
+              <form id="formAdd">
+        <h2>Fecha</h2>
+        <input type="text" name="" id="marca" class="form-control m-1">
+        <h2>Me diste</h2>
+        <input type="text" name="" id="modelo" class="form-control m-1">
+        <h2>Gaste</h2>
+        <input type="text" name="" id="año" class="form-control m-1">
+        <h2>Total</h2>
+        <input type="text" name="" id="color" class="form-control m-1">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="agregar">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center><br><div class="col"><a href="../index.html" class="btn btn-primary d-block w-100">Menu</a></div></center>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    </body>
+    </html>

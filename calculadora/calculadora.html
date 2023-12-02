@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet"href="estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="../img/goku blue.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Calculadora
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <!-- <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Menu</a>
+                    </div> -->
+                </div>
+        </div>
+    </nav>
+<br>
+<main class="card  m-auto w-50">
+    <div class="w-25 m-auto">
+        <div class="mb-3">
+            <h1 lass="form-label">Numero 1:</h1>
+            <input type="number" class="form-control" id="n1" value="">
+            
+        </div>
+        <div class="mb-3">
+            <h1  class="form-label">Numero 2: </h1>
+            <input type="number" class="form-control" id="n2" value="">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-dark" onclick="suma()">+</button>
+            <button class="btn btn-dark" onclick="resta()">-</button>
+            <button class="btn btn-dark" onclick="multi()">*</button>
+            <button class="btn btn-dark" onclick="divi()">/</button>
+        </div>
+    </div>
+    <div class="w-25 m-auto text-center" id="res"></div>
+</main>
+    <center><br><div class="card  m-auto w-50" class="col"><a href="../index.html" class="btn btn-primary d-block w-100">Menu</a></div></center>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
